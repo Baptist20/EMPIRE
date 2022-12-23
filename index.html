@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMPIRES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="navbrand">
+        <a href="#">EMPIRE RULES</a>
+      </div>
+      <!-- <div class="nav-list">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Who We Are</a></li>
+          <li><a href="">What We Do</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div> -->
+      <div class="btn">
+        <button id="btn">
+          Dark
+        </button>
+      </div>
+    </div>
+  </nav>
+  <section class="section-one">
+    <div class="about-them">
+      <h1>Hello!</h1>
+      <h1><span>We</span> Are <span>The</span> Empires</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde corporis <br>id vero vel. Lorem ipsum dolor sit.</p>
+      <a href="#">Reach Us</a>
+    </div>
+    <div class="their-picture" id="imgBox">
+      <input type="file" name="IMAGE" accept="IMAGE/*" id="file" style="display: none;" onchange="loadFile(event)">
+      <label for="file" id="upload">UPLOAD AN IMAGE</label>
+    </div>
+  </section>
+
+  <script>
+    var imgBox = document.getElementById('imgBox');
+
+    var loadFile = function(event){
+      imgBox.style.backgroundImage = 'url(' + URL.createObjectURL(event.target.files[0]) + ')'
+    }
+    var btn = document.getElementById('btn');
+
+    btn.addEventListener('click', function(){
+      document.body.classList.toggle('dark-mode')
+      if(document.body.classList.contains('dark-mode')){
+        btn.textContent = 'LIGHT';
+        btn.style.color = 'white';
+      }else{
+        btn.textContent = 'DARK';
+        btn.style.color = 'black'
+      }
+    })
+  </script>
+</body>
+</html>

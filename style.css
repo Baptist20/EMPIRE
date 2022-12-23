@@ -1,0 +1,339 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--background-color);
+  color: var(--color);
+}
+:root{
+  --background-color: white;
+  --color: black;
+}
+.dark-mode{
+  --background-color: black;
+  --color: white;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .navbrand a{
+  font-size: 40px;
+  text-decoration: none;
+  color: rgb(69, 96, 69);
+  padding: 0px 30px;
+  font-family: cursive;
+}
+button{
+  background-color: var(--background-color);
+  height: 40px;
+  border-radius: 50px;
+  width: 100px;
+  margin: 7px 30px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.section-one {
+  margin-top: 15%;
+  margin-left: 4%;
+  max-width: 1400px;
+  display: flex;
+}
+.section-one h1{
+  font-size: 50px;
+  font-family: serif;
+  color: var(--color);
+  font-weight: 600;
+}
+.section-one h1 span{
+  font-family: serif;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(69, 96, 69);
+}
+.section-one a{
+  background: rgb(35, 45, 35);
+  color: rgb(69, 96, 69);
+  padding: 15px 70px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+}
+.their-picture{
+  width: 500px;
+  height: 500px;
+  margin-top: -100px;
+  margin-left: 100px;
+  background-color: navy;
+  background-color: var(--color);
+  color: var(--background-color);
+  background-size: cover;
+  background-position: cover;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+#upload{
+  padding: 15px 10px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -30px;
+  left: 770px;
+  cursor: pointer;
+  background-color: rgba(33, 29, 29, 0.801);
+}
+@media only screen and (min-width: 280px){
+  .section-one {
+  margin-left: 4%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  }
+  .their-picture{
+    width: 250px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  #upload{
+    bottom: -240px;
+    left: 90px;
+  }
+  button{
+    background-color: var(--background-color);
+    height: 40px;
+    border-radius: 50px;
+    width: 50px;
+    margin: 7px 0px;
+  }
+}
+
+@media only screen and (min-width:360px) {
+  .section-one {
+    margin-top: 15%;
+  margin-left: 4%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  }
+  .their-picture{
+    width: 340px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 0px;
+    background-color: navy;
+    background-color: var(--color);
+    color: var(--background-color);
+    background-size: cover;
+    background-position: cover;
+    box-shadow: 5px 5px 5px 5px gray;
+  }
+  #upload{
+    padding: 15px 10px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -70px;
+    left: 100px;
+    cursor: pointer;
+    background-color: rgba(33, 29, 29, 0.801);
+  }
+}
+@media only screen and (min-width:375px) {
+  .section-one {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  }
+  .their-picture{
+    width: 340px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  #upload{
+    padding: 15px 10px;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -140px;
+    left: 70px;
+  }
+}
+@media only screen and (min-width:390px) {
+  #upload{
+    bottom: 25px;
+    left: 100px;
+  }
+}
+@media only screen and (min-width: 412px){
+
+.their-picture{
+  width: 300px;
+  height: 500px;
+  margin-top: 40px;
+  margin-left: 40px;
+  }
+#upload{
+    bottom: -40px;
+    left: 90px;
+}
+}
+@media only screen and (min-width:414px) {
+  #upload{
+    bottom: -60px;
+    left: 90px;
+  }
+}
+@media only screen and (min-width: 540px){
+    .section-one {
+    margin-left: 4%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    }
+    .their-picture{
+      width: 500px;
+      height: 500px;
+      margin-top: 40px;
+      margin-left: 5px;
+    }
+    #upload{
+      bottom: -170px;
+      left: 90px;
+    }
+  }
+  @media only screen and (min-width: 750px){
+    .section-one {
+    margin-left: 4%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    }
+    .their-picture{
+      width: 500px;
+      height: 500px;
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    #upload{
+      bottom: -360px;
+      left: 300px;
+    }
+  }
+  @media only screen and (min-width: 768px){
+    .section-one {
+    margin-left: 4%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    }
+    .their-picture{
+      width: 600px;
+      height: 500px;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    #upload{
+      bottom: 90px;
+      left: 90px;
+    }
+  }
+  @media only screen and (min-width: 820px){
+    .section-one {
+    margin-left: 4%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    }
+    .their-picture{
+      width: 700px;
+      height: 500px;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    #upload{
+      bottom: 240px;
+      left: 90px;
+    }
+  }
+  @media only screen and (min-width: 912px){
+    .section-one {
+    margin-left: 4%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    }
+    .their-picture{
+      width: 750px;
+      height: 600px;
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    #upload{
+      bottom: 320px;
+      left: 90px;
+    }
+  }
+  @media only screen and (min-width: 1024px){
+    .section-one {
+    margin-left: 4%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    }
+    .their-picture{
+      width: 800px;
+      height: 500px;
+      margin-top: 40px;
+      margin-left: 100px;
+    }
+    #upload{
+      bottom: -350px;
+      left: 180px;
+    }
+  }
+  @media only screen and (min-width: 1280px){
+    .section-one {
+    margin-left: 4%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    }
+    .their-picture{
+      width: 1000px;
+      height: 600px;
+      margin-top: 40px;
+      margin-left: 80px;
+    }
+    #upload{
+      bottom: -300px;
+      left: 300px;
+    }
+  }
+/* }
+.navbar .nav-list ul {
+  display: flex;
+  margin-right: -190px;
+}
+.navbar .nav-list ul li{
+  width: 150px;
+}
+.navbar .nav-list ul li a{
+  color: rgb(69, 96, 69);
+  display: flex;
+  padding: 15px 0px;
+  align-items: center;
+  justify-content: center;
+  transition: hover 1s;
+}
+.navbar .nav-list ul li a:hover{
+  background-color:  rgb(35, 45, 35);
+} */
